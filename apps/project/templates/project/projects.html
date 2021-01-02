@@ -1,0 +1,59 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %} Projects  {% endblock title %} 
+
+
+
+
+
+
+
+{% block content %}
+<div class="container mt-5">
+{% include 'core/nav.html' %}
+</div>
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+    </div>
+  </div>
+<section class="container">
+    <div class="card h-60">
+        <div class="container m-3 p-3">
+            <h1 class="title">Projects </h1>
+            <div class="row " >
+           {% for project in projects %}
+            <div class="col-md-6 card-tal mb-3">
+              <div class="container-fluid card-tal-con" >
+                <div class="row" >
+                 <div class="col-6"><hr style="background-color: white;border-top: 2px solid rgb(255 255 255);" ></div> <div class="col-6"><h2>{{project.project_type}}</h2></div>
+                  <div class="col-md-6">
+                    <img class="p-" style="width: 100%;" src="{{project.img}}" alt="">
+                  </div>
+                  <div class="col-md-6">
+                   <div class="pt-2 pt-md-1">
+                    <h5>{{project.title}}</h5>
+                    <p>Chanandler Bong</p>
+                    <p>{{project.started}}</p>
+                   </div>
+                  </div>
+                  <div class="col-2 col-md-6"></div><div class="col-10 col-md-6">
+                    <a href="{% url 'project' project.slug %}" class="btn mx-0 py-2 px-5 bg-yellow text-red">Learn More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+           {% empty %}
+           <div class="alert alert-primary">
+               <p>
+                   No Projects Availble 
+               </p>
+           </div>
+
+           {% endfor %}
+           </div>
+        </div>
+     
+    </div>
+</section>
+
+{% endblock content %} 

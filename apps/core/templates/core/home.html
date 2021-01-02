@@ -1,0 +1,320 @@
+{% extends 'core/base.html' %}
+{% load static %}
+{% block title %} Welcome to python Cameroon user group  {% endblock title %} 
+
+
+
+
+{% block content %}
+<div class="main">
+    <div class="container-fluid">
+{% include 'core/nav.html' %}
+
+<div class="jumbotron">
+    <div class="container-fluid pt-5">
+        <div class="row">
+            <div class="col-md-8 col-sm-12 left">
+                <h1 class="display-4">Welcome to Python CM 🐍🇨🇲 </h1>
+                <p class="lead">This is the Python Users Group Cameroon. We host presentations and
+                    discussions about Python and Python-related software development (mostly
+                    framework-independent).</p>
+                <button class="btn btn-primary px-3 mb-3">
+                    Participate on <i class="fa fa-slack px-1"></i>Slack
+                </button>
+                <button class="btn btn-info px-3 mb-3">
+                    Participate on <i class="fa fa-telegram px-1"></i>telegram
+                </button>
+            </div>
+            <div class="col-md-4 d-none d-md-block terminal">
+                <div class="fakeMenu">
+                    <div class="fakeButtons fakeClose"></div>
+                    <div class="fakeButtons fakeMinimize"></div>
+                    <div class="fakeButtons fakeZoom"></div>
+                </div>
+                <div class="fakeScreen">
+                    <p class="small">Python 3.9.0</p>
+                    <div id="typed-strings">
+                        <p class="code">>>>
+                            <span class="func">print</span>(<span class="string">"welcome to python cameroon user group"</span>) <br>
+                           >>> still_alive = <span class="const">True</span> <br>
+                            >>> <span class="func">while</span> still_alive : <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  wear_mask() <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  stay_6_ft_apart() <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  wash_hands() <br>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  get_tested() <br><br>
+                        </p>
+
+                        <p class="line4"><span class="cursor4">>>></span></p>
+                    </div>
+                    <span id="typed"></span>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+</div>
+</div>
+
+
+<div class="notice col text-center">
+<p><strong>Covid-19 : </strong> Like any organisation we have to cope with the pandemic.
+<strong>PyCon 2020 has been cancelled</strong> , we'll be back in 2021 Until further notice our monthly
+meetups will be online, every second Wednesday of the month, as usual.
+</p>
+</div>
+
+<section id="upcomingEvents">
+
+
+<div class="container p-4">
+<h2 class="title">
+    Upcoming Events
+</h2>
+<div class="row justify-content-center">
+
+    <div class="col-md-5 card event-block m-1">
+        <div class="row">
+            <div class="col-md-2 event-date text-center">
+                <h3 class="event-month h5">FEB</h3>
+                <h1 class="event-day">26</h1>
+                <div class="event-date-divider"></div>
+                <h5 class="event-year"> 2020</h5>
+            </div>
+            <!-- <div class="col-md-4 col-sm-8 event-image">
+                <img src="{% static 'images/pyconafrica.jpg" alt="" class="img-fluid">
+            </div> -->
+            <div class="col-md event-detail ">
+                <h3>
+                    Event Name Goes Here
+                </h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis minus repellendus,
+                    minima voluptates iusto pariatur nam similique numquam vero delectus blanditiis impedit
+                    voluptatem praesentium recusandae illo esse provident dignissimos. Molestiae soluta
+                    exercitationem quasi deserunt numquam, illo ab incidunt? Provident, temporibus? Sed
+                    labore eaque ipsa ea?
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-5 card event-block m-1">
+        <div class="row">
+            <div class="col-md-2 event-date text-center">
+                <h3 class="event-month h5">FEB</h3>
+                <h1 class="event-day">26</h1>
+                <div class="event-date-divider"></div>
+                <h5 class="event-year"> 2020</h5>
+            </div>
+            <!-- <div class="col-md-4 col-sm-8 event-image">
+                <img src="{% static 'images/pyconafrica.jpg" alt="" class="img-fluid">
+            </div> -->
+            <div class="col-md event-detail">
+                <h3>
+                    Event Name Goes Here
+                </h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis minus repellendus,
+                    minima voluptates iusto pariatur nam similique numquam vero delectus blanditiis impedit
+                    voluptatem praesentium recusandae illo esse provident dignissimos. Molestiae soluta
+                    exercitationem quasi deserunt numquam, illo ab incidunt? Provident, temporibus? Sed
+                    labore eaque ipsa ea?
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-5 card event-block m-1">
+        <div class="row">
+            <div class="col-md-2 event-date text-center">
+                <h3 class="event-month h5">FEB</h3>
+                <h1 class="event-day">26</h1>
+                <div class="event-date-divider"></div>
+                <h5 class="event-year"> 2020</h5>
+            </div>
+            <!-- <div class="col-md-4 col-sm-8 event-image">
+                <img src="{% static 'images/pyconafrica.jpg" alt="" class="img-fluid">
+            </div> -->
+            <div class="col-md event-detail">
+                <h3>
+                    Event Name Goes Here
+                </h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis minus repellendus,
+                    minima voluptates iusto pariatur nam similique numquam vero delectus blanditiis impedit
+                    voluptatem praesentium recusandae illo esse provident dignissimos. Molestiae soluta
+                    exercitationem quasi deserunt numquam, illo ab incidunt? Provident, temporibus? Sed
+                    labore eaque ipsa ea?
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-5 card event-block m-1">
+        <div class="row">
+            <div class="col-md-2 event-date text-center">
+                <h3 class="event-month h5">FEB</h3>
+                <h1 class="event-day">26</h1>
+                <div class="event-date-divider"></div>
+                <h5 class="event-year"> 2020</h5>
+            </div>
+            <!-- <div class="col-md-4 col-sm-8 event-image">
+                <img src="{% static 'images/pyconafrica.jpg' %}" alt="" class="img-fluid">
+            </div> -->
+            <div class="col-md event-detail">
+                <h3>
+                    Event Name Goes Here
+                </h3>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis minus repellendus,
+                    minima voluptates iusto pariatur nam similique numquam vero delectus blanditiis impedit
+                    voluptatem praesentium recusandae illo esse provident dignissimos. Molestiae soluta
+                    exercitationem quasi deserunt numquam, illo ab incidunt? Provident, temporibus? Sed
+                    labore eaque ipsa ea?
+                </p>
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+
+</section>
+
+
+<section>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-md-9">
+        <div class="" id="projects">
+            <h1 class="heading title">Projects & Campaigns </h1>
+            <p class="info">
+                Here are some of the major projects/campaigns the Python Cameroon community are a part of
+                and supports.
+            </p>
+            <div class="row" id="projects-list">
+                <div class="col-md-4 p-1 md-3">
+                    <div class="card project-card">
+                        <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                        <i class="fas fa-graduation-cap fa-3x text-center"></i>
+                        <div class="card-body">
+                            <h3 class="card-title title">Py Learner </h3>
+                            <p class="card-text">Py-Learner is a desktop software that aimed to help in learning
+                                Python. It is a crossplatform application built with PyQt5.</p>
+                        </div>
+                        <a href="#" class="card-footer">
+                            Learn more <i class="fas fa-arrow-alt-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-1 md-3">
+                    <div class="card project-card">
+                        <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                        <i class="fas fa-graduation-cap fa-3x text-center"></i>
+                        <div class="card-body">
+                            <h3 class="card-title title">Py Learner </h3>
+                            <p class="card-text">Py-Learner is a desktop software that aimed to help in learning
+                                Python. It is a crossplatform application built with PyQt5.</p>
+                        </div>
+                        <a href="#" class="card-footer">
+                            Learn more <i class="fas fa-arrow-alt-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4 p-1 md-3">
+                    <div class="card project-card">
+                        <!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
+                        <i class="fas fa-graduation-cap fa-3x text-center"></i>
+                        <div class="card-body">
+                            <h3 class="card-title title">Py Learner </h3>
+                            <p class="card-text">Py-Learner is a desktop software that aimed to help in learning
+                                Python. It is a crossplatform application built with PyQt5.</p>
+                        </div>
+                        <a href="#" class="card-footer">
+                            Learn more <i class="fas fa-arrow-alt-circle-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+            </div>
+                <div class="text-center">
+                    <a href="#" class="btn btn  btn-secondary px-4">
+                        See all Projects / Campaigns
+                    </a>
+                    
+                </div>
+        </div>
+        <hr>
+
+        <div class="container bg-yellow p-5 text-light" id="sponsors">
+
+            <h1 class="heading title">Our Sponsors & Partners </h1>
+            <p class="info">
+                We couldn't be here without the support from amazing people and organizations who donated
+                money, knowledge and time to help us make this a reality. If you want to contribute and
+                support our goal, please <a href="#"> </a>get it touch </a>
+            </p> <br>
+
+
+            <div class="row">
+                <div class="col-md-4 sponsor">
+                    <img src="{% static 'images/psf-logo-372x84-alpha.png' %}" alt="python software foundation"
+                        class="img-fluid">
+                    <p class="small"><br>
+                        The Python Software Foundation is the organization behind Python. Become a member of
+                        the PSF and help advance the software and our mission.
+                    </p>
+                </div>
+
+                <div class="col-md-4 sponsor">
+                    <img src="{% static 'images/github_owler_20180612_070358_original.png' %}" alt="github"
+                        class="img-fluid"><br>
+                    <p class="small">
+                        GitHub is how people build software. With a community of more than 11 million
+                        people, developers can discover, use, and contribute to over 29 million projects
+                        using a powerful collaborative development workflow.
+                    </p>
+                </div>
+
+                <div class="col-md-4 sponsor">
+                    <img src="{% static 'images/django.png' %}" alt="Django Software Foundation " class="img-fluid"><br>
+                    <p class="small">
+                        The goal of the Django Software Foundation is to promote, support, and advance the
+                        Django Web framework.
+                    </p>
+                </div>
+                <div class="col-md-4 sponsor">
+                    <img src="{% static '/images/PA-logo-large.png' %}" alt="python anywhere" class="img-fluid"><br>
+                    <p class="small">
+                        PythonAnywhere makes it easy to create and run Python programs in the cloud.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 text-center">
+        <h3 class="title">News</h3>
+        <a href="https://twitter.com/pythoncameroun?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+            data-size="large" data-dnt="true" data-show-count="true">Follow @pythoncameroun</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <div id="twitterFeed">
+            <a class="twitter-timeline" data-dnt="true"
+                href="https://twitter.com/PythonCameroun?ref_src=twsrc%5Etfw">Tweets by PythonCameroun</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
+
+        <hr>
+        <script type="text/javascript"
+            src="//rf.revolvermaps.com/0/0/6.js?i=5uj7nujatan&amp;m=1&amp;c=127c25&amp;cr1=ffc407&amp;f=arial&amp;l=1&amp;s=270"
+            async="async"></script>
+
+    </div>
+</div>
+</div>
+</section>
+
+
+
+
+
+{% endblock %}
