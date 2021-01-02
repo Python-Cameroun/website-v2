@@ -516,3 +516,8 @@ jumbotron .left {
     background-color: #FFC407;
     color: #9F0A0F
   }
+  .col-centered{
+      float: none ;
+      margin: 0 auto;
+      
+  }

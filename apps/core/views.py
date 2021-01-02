@@ -1,4 +1,6 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.core.mail import send_mail
+from django.contrib import messages
 
 # HOME VIEW
 def home_view(request):
@@ -24,4 +26,19 @@ def support_view(request):
 
 # CONTACT PAGE VIEW
 def contact_view(request):
+    if request.method == "POST":
+        name = request.POST.get('name')
+        email = request.POST.get('email')
+        message = request.POST.get('message')
+        # send the email
+        try:
+            send_mail(
+                f'New inquiry [{name}]',
+                message,
+                email, 
+                ['groovyguev@gmail.com'] )
+        except BadHeaderError:
+            messages.error(request, 'Failed try again.')
+            return redirect('contact')
+        return render(request,'core/contact.html',{'success':True})
     return render(request,'core/contact.html',{})
