@@ -37,8 +37,8 @@ def contact_view(request):
                 message,
                 email, 
                 ['groovyguev@gmail.com'] )
-        except BadHeaderError:
-            messages.error(request, 'Failed try again.')
+        except:
+            messages.error(request, 'Failed! please try again.')
             return redirect('contact')
         return render(request,'core/contact.html',{'success':True})
     return render(request,'core/contact.html',{})
