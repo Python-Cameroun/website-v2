@@ -38,10 +38,9 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = os.getenv("DEBUG")
 
 if DEBUG == "production":
-    ALLOWED_HOSTS = ['www.pythoncm.org','pythoncm.org','159.89.84.146']
+    ALLOWED_HOSTS = ['.pythoncm.org', '159.89.84.146']
 else:
     ALLOWED_HOSTS = ['localhost', '127.0.0.1']
-
 
 
 # Application definition
@@ -93,14 +92,14 @@ WSGI_APPLICATION = 'website.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 if DEBUG == "production":
     DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': os.getenv('DB_DATABASE'),
-        'USER': os.getenv('DB_USERNAME'),
-        'PASSWORD': os.getenv('DB_PASSWORD'),
-        'HOST': os.getenv('DB_HOST'),
-        'PORT': '',
-    }
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': os.getenv('DB_DATABASE'),
+            'USER': os.getenv('DB_USERNAME'),
+            'PASSWORD': os.getenv('DB_PASSWORD'),
+            'HOST': os.getenv('DB_HOST'),
+            'PORT': '5432',
+        }
     }
 else:
     DATABASES = {
