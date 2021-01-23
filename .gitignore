@@ -1,10 +1,7 @@
-*.log
-*.pot
-*.pyc
-__pycache__/
-local_settings.py
-db.sqlite3
-.DS_Store
+
+.env
+*.wpr
+*.wpu
 
 # Created by https://www.toptal.com/developers/gitignore/api/python,django,vscode,pycharm+all
 # Edit at https://www.toptal.com/developers/gitignore?templates=python,django,vscode,pycharm+all
@@ -316,3 +313,4 @@ modules.xml
 *.code-workspace
 
 # End of https://www.toptal.com/developers/gitignore/api/python,django,vscode,pycharm+all
+

@@ -1,4 +1,5 @@
 {% load static %}
+{% load meta %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,23 +11,25 @@
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
 
     <title>{% block title %} {% endblock title %}</title>
+
+    {% include 'meta/meta.html' %}
 </head>
 <body>
 
-  
-  
+
+
   {% if messages %}
       <!-- Then put toasts within -->
       {% for message in messages %}
       <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
-        <strong>{{message}} </strong> 
+        <strong>{{message}} </strong>
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       {% endfor %}
   {% endif %}
-   
+
 {% block content %}
 
 {% endblock content %}
@@ -60,14 +63,14 @@
 <!-- Footer starts-->
 <footer>
 <!-- Copyright -->
-<div class="small text-center">&copy;<script>document.write(new Date().getFullYear())</script> (PYCUG) Python Cameroon User Group | 
+<div class="small text-center">&copy;<script>document.write(new Date().getFullYear())</script> (PYCM) Python Cameroon |
     Designed & Developed with ❤️ and  ☕️ . All the souce code available on github
 
 </div>
 <!-- Copyright -->
 
     <a style="position: fixed; top: 100%; right: 0;" class="gh-fork"
-        href="https://github.com/Python-Cameroun/pythoncm-website">
+        href="https://github.com/Python-Cameroun/website-v2">
         <img src="https://raw.github.com/anasnakawa/kalendae-skins/gh-pages/images/forkme-red.png"
             alt="Fork me on GitHub">
     </a>
